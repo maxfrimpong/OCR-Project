@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OCR Web Application</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>OCR Web Application</h1>
+    <input type="file" id="imageInput" accept="image/*">
+    <button id="processImage">Extract Text</button>
+    <div id="output">
+      <h3>Extracted Text:</h3>
+      <textarea id="extractedText" rows="10" cols="50" readonly></textarea>
+    </div>
+    <div class="buttons-wp">
+      <button id="downloadDoc">Download as Word</button>
+      <button id="downloadPdf">Download as PDF</button>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.0.0/dist/tesseract.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
